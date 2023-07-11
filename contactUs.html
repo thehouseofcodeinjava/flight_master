@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: "Verdana", sans-serif;
+        }
+
+
+        nav {
+            font-family: "Verdana", sans-serif;
+            padding: 10;
+            margin: 10;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            height: 63px;
+            background-color: black;
+            color: white;
+            align-items: center;
+        }
+
+        nav ul li {
+            padding: 0 12px;
+        }
+
+        .brand img {
+            size: a3;
+            display: table-header-group;
+            width: 45px;
+            padding: 0 8px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            width: 100px;
+            padding: 50px;
+            margin-left: 450px;
+            margin-right: 100px;
+            font-family: "Varela Round", sans-serif;
+            display: block;
+            border-radius: 21px;
+
+        }
+
+        #submit {
+            background-color: aqua;
+            width: 89px;
+            height: 25px;
+            opacity: 0.87;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 300px;
+            padding: 23px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body
+    background="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="spotifyLogo.png" alt="Spotify">Spotify
+            </li>
+            <li><a href="http://127.0.0.1:5500/Project3/ih.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/Project3/about.html">About</a></li>
+            <li><a href="http://127.0.0.1:5500/Project3/plan.html">Plans</a></li>
+            <li><a href="http://127.0.0.1:5500/Project3/contactUs.html">ContactUs</a></li>
+
+
+        </ul>
+
+    </nav>
+    <!--<div class="container my-3">
+
+
+        <h1>ContactUs</h1>
+        <hr>
+        <form class="mb-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="FullName">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary"id ="submit">Sign in</button>
+            </div>
+        </form>
+    </div>-->
+    <div class="container">
+        <form >
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Email.." required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="india">India</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</html>
